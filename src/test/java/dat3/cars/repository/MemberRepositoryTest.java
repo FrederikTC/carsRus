@@ -20,9 +20,9 @@ class MemberRepositoryTest {
 
 
     @BeforeAll
-    public static void setupData(@Autowired MemberRepository memberRepository){
-        Member m1 = new Member("aa","aa","aa","aa");
-        Member m2 = new Member("bb","bb","bb","bb");
+    public static void Member(@Autowired MemberRepository memberRepository){
+        Member m1 = new Member("aa","aa","aa","aa","aa","aa","aa","aa");
+        Member m2 = new Member("bb","bb","bb","bb","bb","bb","bb","bb");
         memberRepository.save(m1);
         memberRepository.save(m2);
         m1UserName = m1.getUsername();
